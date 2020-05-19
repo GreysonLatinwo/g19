@@ -1,0 +1,110 @@
+body {
+    background-color: black;
+}
+#songContainer {
+    position: absolute;
+    left: 20px;
+    top: 270px;
+    right: 20px;
+    bottom: 20px;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+}
+#playContainer {
+    position: absolute;
+}
+
+#pageContainer {
+    position: absolute;
+    left: 20px;
+    top: 130px;
+    right: 20px;
+    bottom: 0px;
+    font-family: Arial, sans-serif;
+   
+}
+.page_content {
+   
+    width: 500px;
+    height: 500px;
+
+    transform-origin: top left;
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+    align-items: center;
+}
+
+.page_content .headerContainer{
+    position: relative;
+    color: white;
+    align-items: center; 
+    text-align: center;
+    font-family: verdana;
+    border-radius: 1%;
+    transform: translate(-20%, -5%);
+}
+
+
+.buttonSend {
+background-color: #0096C2;
+border: none;
+color: white;
+padding: 3.5% 10%;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+.button {
+    background-color: #0096C2;
+    border: none;
+    color: white;
+    padding: -2% 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+
+.button:hover{
+    background-color:#047EA2;
+}
+.buttonSend:hover{
+    background-color:#047EA2;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.centerimg {
+    display: inline;
+    
+   
+
+
+
+
+  }
+    
+
+fieldset {
+    background-image:linear-gradient(to right,#11181A, #1F5767 , #11181A);
+    border:  6px solid #0B1011;
+    margin: auto;
+    padding:  .5em;
+    border-radius: 25%;
+    height: 100%;
+    width: 200px; 
+}
+
+#box {
+    align-items: center; 
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+    
+}

@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+		<title>
+			Playlist Party
+        </title>
+        
+		<meta charset = "utf-8"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js"></script> 
+        <link rel="stylesheet" type="text/css" href="WeVibe_Choose.css">
+        <script src="./WeVibe_Choose.js"></script>
+    </head>
+
+    <body>
+
+        <h1 align ="center" style="color:white; font-family: verdana">Playlist Makerer</h1>
+
+        <div id="container">
+            <div class="page_content">
+                <img src="blueCircle.gif" width="360" />
+
+                <div class="centered"> 
+
+                    <div class="circleContainer">
+                        <fieldset>
+                            <form id="WeVibeForm" action="" >
+                        
+                            <p>Playlist Party</p>
+
+                            <br>
+
+                            <input style="font-family: verdana" type="button" class="button" id="HostButton" name="HostButton" value="Host" onClick= clientDirector(this.id); />
+                            <br>
+                            <br>
+                            <input style="font-family: verdana" type="button" class="button" id="GuestButton" name="GuestButton" value="Join" onClick= clientDirector(this.id); />
+                            
+                        </fieldset>
+                    </div>
+                </div>
+            
+            </div>
+            <div id="Platforms">
+			</div>
+        </div>
+
+    </body>
+
+</html>

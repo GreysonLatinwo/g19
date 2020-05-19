@@ -1,0 +1,67 @@
+<html>
+
+    <head>
+		<title>
+			Playlist Party
+        </title>
+        
+		<meta charset = "utf-8"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js"></script> 
+		<script type="text/javascript" src="https://w.soundcloud.com/player/api.js"></script>
+        <link rel="stylesheet" type="text/css" href="WeVibe_Host.css">
+        <script src="./WeVibe_Host.js"></script>
+    </head>
+
+    <body onload="initialize()"> 
+
+		<h1 align ="center" style="color:white; font-family: verdana">Playlist Host</h1>
+		<p id="ServerCode" style= "color: white; font-family: verdana;" ><b>Party Code: </b></p>
+		<input style="font-family: verdana;" type="button" class= "button" id="Disconnect" name="Disconnect" value="Disconnect" onClick= disconnect(); />
+		
+		<div id="pageContainer">
+			<div id="headerContainer">
+				<div class="page_content">
+					<div class="headerContainer">
+						<div class="centered">
+
+						<fieldset  style="width: 180px; border-radius: 20%;">
+					
+							<form id="WeVibeForm">
+						
+							<p>----Type a song----</p>
+		
+							<p id = "SongName">
+								<input type="text" id="SongName" name="SongName" />
+							</p>
+		
+							<p> 
+								<input style="font-family: verdana;" type="button" class="buttonSend" id="Send" name="Send" value="Send" onClick= sendSong(); />
+							</p>
+							
+							</form>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+            
+			
+			<div id="songContainer">
+			</div>
+
+		</div>
+
+		<br>
+		<br>
+
+		<div id = "playContainer">
+		</div>
+
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+
+		<input style="font-family: verdana; visibility: hidden;" type="button" class= "button" id="Skip" name="Skip" value="►►" onClick= skipSong(); />
+			
+    </body>
+
+</html>

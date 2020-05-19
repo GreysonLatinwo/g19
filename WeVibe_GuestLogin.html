@@ -1,0 +1,58 @@
+<html>
+
+    <head>
+		<title>
+			Playlist Party
+        </title>
+        
+		<meta charset = "utf-8"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js"></script> 
+        <link rel="stylesheet" type="text/css" href="WeVibe_GuestLogin.css">
+        <script src="./WeVibe_GuestLogin.js"></script>
+    </head>
+
+    <body onload="initialize();">
+
+        <h1 align ="center" style="color:white; font-family: verdana">We Vibe</h1>
+
+        <div id="container">
+            <div class="page_content">
+                <img src="blueCircle.gif" class="blueCircle" width="360" />
+
+                <div class="centered">
+
+                    <div class="circleContainer">
+                    
+
+                        <fieldset  style="width: 200px;"  >
+					
+							<form id="WeVibeForm" action="" >
+		
+							<p id = "PartyCode" >Party Code
+                                <input id="PartyCode" name="PartyCode" type="number"/>
+                                <br>
+							</p>	
+						
+							<p id = "Username">Username
+                                <input id="Username" name="Username" />  
+                                <br> 
+							</p>
+							
+							
+							
+							<p>
+								<input style="font-family: verdana" type="button" class="button" id="Login" name="Login" value="Login" onClick= guestValidate(); />
+							</p>
+							
+						</fieldset>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+    </body>
+
+</html>
